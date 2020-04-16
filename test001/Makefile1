@@ -1,0 +1,35 @@
+########################################################################
+####################### Makefile Template ##############################-g -Wall  
+########################################################################
+#gcc -std=c11 -Wall -o obj/a.o -c src/a.c
+#gcc -std=c11 -Wall -o obj/main.o -c src/main.c
+#gcc -std=c11 -Wall -o obj/b.o -c src/b.c
+#gcc -std=c11 -Wall -o myapp obj/a.o obj/main.o obj/b.o 
+main: main.o   YAThread.o
+	g++  -Wall -o  mainapp  main.o  YAThread.o
+YAThread.o: YAThread.cpp
+	g++  -Wall -o   YAThread.o  -c src/YAThread.cpp 
+YAThread.o: YAThread.cpp
+	g++  -Wall -o   main.o  -c src/main.cpp 
+.PHONY:clean
+clean:
+	-rm  -rf  *.o
+
+########################################################################
+CC = gcc
+XX = g++
+CFLAGS = -Wall -O -g
+TARGET = ./hello
+#compile all .c and .cpp to .o
+%.o:%c
+	$(CC) $(CFLAGS) -c $< -o $@
+%.o:%.cpp
+	$(XX) $(CFLAGS) -c $< -o $@
+SOURCES = $(wildcard *.c *.cpp)
+OBJS = $(patsubst %.c,%.o, $(patsubst %.cpp,%.o,$(SOURCES)))
+$(TARGET):$(OBJS)
+	$(XX) $(OBJS) -o $(TARGET)
+	chmod a+x $(TARGET)
+clean:
+	rm -rf *.o hello
+########################################################################

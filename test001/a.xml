@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+    <PK_Type>
+        <Name>dd</Name>
+    </PK_Type>
+    <Info>
+        <FSUID>00000000002000</FSUID>
+        <DeviceList>
+            <Device DeviceID="0" DeviceType="0">
+                <TSemaphore ID="0" SignalNumber="0"/>
+                <TSemaphore ID="0" SignalNumber="1"/>
+            </Device>
+            <Device DeviceID="1" DeviceType="1">
+                <TSemaphore ID="1" SignalNumber="0"/>
+                <TSemaphore ID="1" SignalNumber="1"/>
+            </Device>
+            <Device DeviceID="2" DeviceType="2">
+                <TSemaphore ID="2" SignalNumber="0"/>
+                <TSemaphore ID="2" SignalNumber="1"/>
+            </Device>
+            <Device DeviceID="3" DeviceType="3">
+                <TSemaphore ID="3" SignalNumber="0"/>
+                <TSemaphore ID="3" SignalNumber="1"/>
+            </Device>
+            <Device DeviceID="4" DeviceType="4">
+                <TSemaphore ID="4" SignalNumber="0"/>
+                <TSemaphore ID="4" SignalNumber="1"/>
+            </Device>
+            <Device DeviceID="5" DeviceType="5">
+                <TSemaphore ID="5" SignalNumber="0"/>
+                <TSemaphore ID="5" SignalNumber="1"/>
+            </Device>
+            <Device DeviceID="6" DeviceType="6">
+                <TSemaphore ID="6" SignalNumber="0"/>
+                <TSemaphore ID="6" SignalNumber="1"/>
+            </Device>
+            <Device DeviceID="7" DeviceType="7">
+                <TSemaphore ID="7" SignalNumber="0"/>
+                <TSemaphore ID="7" SignalNumber="1"/>
+            </Device>
+            <Device DeviceID="8" DeviceType="8">
+                <TSemaphore ID="8" SignalNumber="0"/>
+                <TSemaphore ID="8" SignalNumber="1"/>
+            </Device>
+            <Device DeviceID="9" DeviceType="9">
+                <TSemaphore ID="9" SignalNumber="0"/>
+                <TSemaphore ID="9" SignalNumber="1"/>
+            </Device>
+        </DeviceList>
+    </Info>
+</Request>

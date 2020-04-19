@@ -1,0 +1,15 @@
+
+1   gcc -v -E -x c++ -     获取gcc编译路径：  家里的编译路径为： 
+/usr/include/c++/7
+ /usr/include/x86_64-linux-gnu/c++/7
+ /usr/include/c++/7/backward
+ /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+
+ 2  sudo ln -s /usr/include/libxml2/libxml   /usr/include/libxml      软连接，解决找不到libxml.h的问题
+
+
+3  dpkg -l | grep “软件或者包的名字”；  查看是否安装了某个软件包，仅限于api-get安装的，源码包安装不行 

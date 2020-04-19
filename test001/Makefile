@@ -8,7 +8,7 @@ CXXFLAGS = -std=c++17 -Wall -g
 LDFLAGS = 
 
 # Makefile settings - Can be customized.
-APPNAME = main
+APPNAME = app
 EXT = .cpp
 SRCDIR = src
 OBJDIR = obj
@@ -32,10 +32,10 @@ $(warning "the value of WDELOBJ is $(WDELOBJ)")
 ########################################################################
 
 all: $(APPNAME)
-
+#/usr/lib/x86_64-linux-gnu/
 # Builds the app
 $(APPNAME): $(OBJ)
-	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)  -lpthread
+	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)  -lpthread  -lxml2 
 
 # Creates the dependecy rules
 %.d: $(SRCDIR)/%$(EXT)
